@@ -1,0 +1,4 @@
+enable        : true
+title         : "Our Clients"
+client_logos  : 
+  ["images/clients/mahindra-logo.png", "images/clients/jyothy-labs-logo.png"]

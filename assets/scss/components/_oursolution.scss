@@ -1,0 +1,208 @@
+.container {
+  max-width: 90%;
+}
+
+.features-bg {
+  background: url("../images/features/featureHeroImg.png") no-repeat center;
+  background-size: cover;
+   height: 70vh;
+ 
+  @include tablet{
+    background: url("../images/mobile-images/mobileBanner2.png") no-repeat center;
+    background-size: cover; 
+    height: 100vw;
+  } 
+  @include mobile-xs{
+    height: 70vh;
+  }
+}
+.featureHP{
+ 
+  padding-bottom: 125px;
+  @include tablet{
+    width: 65%;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 260px;
+  }
+  @include mobile{
+    width: 100%;
+    font-size: 11px;
+    line-height: 15px;
+    padding-bottom: 182px;
+  }
+}
+
+.featureHH{
+  font-size: 33px;
+  @include mobile{
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 40px;
+  }
+  @include mobile-xs{
+    padding-top: 25px;
+  }
+}
+.opOpBg {
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 500px;
+}
+.opOph2 {
+  font-weight: bold;
+  font-family: Montserrat;
+  padding-top: 10px;
+  
+  padding-bottom: 20px;
+  @include mobile {
+    font-size: 19px;
+  }
+}
+.opOph5 {
+  font-weight: normal;
+  font-family: Montserrat;
+  text-align: left;
+ line-height: 30px;
+  
+  @include mobile {
+    width: auto;
+  }
+}
+.opOp {
+  margin-top: 30px;
+}
+
+.capOpH {
+  //display: flex;
+  padding: 40px 40px 10px 50px ;
+  
+  margin-top: 60px;
+  box-shadow: -35px -21px 25px rgba(0, 0, 0, 0.08),-11px -7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 10%;
+  height: 350px;
+  width:85%;
+  margin-right: 55px;
+  margin-bottom: 30px;
+  @include mobile {
+    height: 300px;
+  // width: 20rem;
+    margin-bottom: 30px;
+    padding: 30px;
+    padding-top: 30px;
+    }
+@include desktop{
+  width: 90%;
+  margin-right: 10px;
+}
+    @include tablet{
+      align-self:center;
+      //width:100%;
+      margin-right: 0;
+      margin-top: 10px;
+      }
+      
+}
+.capOpH li,.capOpHExp li{
+  line-height: 30px;
+  
+}
+.optimise-list{
+  @include desktop{
+    padding-top: 29px;
+  }
+}
+
+.capOpHExp {
+  //display: flex;
+  padding: 40px 40px 10px 50px ;
+  margin-top: 60px;
+  box-shadow: -35px -21px 25px rgba(0, 0, 0, 0.08),-11px -7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 10%;
+  height: 420px;
+  width:85%;
+  margin-right: 55px;
+ margin-bottom: 30px;
+ 
+  @include tablet {
+    margin-top: 30px;
+    height: 500px;
+    //width: 100%;
+    margin-bottom: 30px;
+  }
+  @include desktop{
+    width: 90%;
+    height: 520px;
+  }
+}
+.capOpHroute {
+  margin-top: 150px;
+  margin-left:0px;
+  
+  @include mobile {
+    margin-top: 0px;
+  }
+  @include tablet{
+    margin-top: 30px;
+  }
+}
+.logoOpImg {
+  //position: relative;
+  place-self: flex-start;
+  width: 10rem;
+  height: 80%;
+  padding-right: 10px;
+  @include desktop{
+    width: 7.5rem;
+  }
+  @include tablet {
+   width: 8rem;
+   //height: 70%;
+  }
+  @include mobile-xs{
+    width: 4rem;
+  }
+}
+
+.capOpH1 {
+  color: $text-color-primary;
+   @include desktop {
+    font-size: 23px;
+   }
+  }
+.capOpH2 {
+  text-align: left;
+  @include desktop {
+    font-size: 23px;
+   }
+}
+
+
+.analytics-h1 {
+  font-weight: bold;
+  padding-top: 75px;
+  font-family: Montserrat;
+  @include mobile {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 19px;
+  }
+}
+
+  
+.jumbotron h4{
+  @include mobile{
+    width: 60%;
+  }
+}
+
+.business{
+  padding-top: 35px;
+  //padding-bottom: 30px;
+}
+.route{
+  margin-top: -10px;
+}

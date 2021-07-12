@@ -1,0 +1,27 @@
+{{ with .Site.Params.clients }}
+{{ if .enable }}
+{{ "<!-- Site Clients Start -->" | safeHTML }}
+<section class="home-clients">
+  <div class="container"  >
+    <div class="row">
+      <div class="col-md-12 clientHeader">
+        <h2 >
+          {{ .heading }}
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-6" style="padding:20px; ">
+        <img height="110" width="249"  src="{{ .logo1 }}" />
+      </div>
+      <div class="col-md-6" style=" padding: 40px;" >
+        <img  height="71" width="249"   src="{{ .logo2 }}" />
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}

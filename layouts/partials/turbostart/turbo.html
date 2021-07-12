@@ -1,0 +1,111 @@
+{{ partial "resources/header.html" . }}
+<section class="resources-tab-section">
+  <div class="container">
+    <div class="panel with-nav-tabs panel-default">
+      <div class="panel-heading tabslist">
+        <ul
+          class="nav nav-tabs resourcetabs"
+          style="justify-content: center; text-align: center"
+        >
+          <a href="/resources/">
+            <h2>ALL</h2>
+          </a>
+          <!--<a href="/whitepapers/" > <h2> {{ .Params.whitepapersTab }} </h2> </a>-->
+          <a href="/blogs-updates/"> <h2>Blog & Updates</h2> </a>
+          <a class="active" href="/inthenews/"> <h2>In The News</h2></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="blogs-pages">
+  <div class="container pt-5">
+    <div class="card mb-3 border-bottom">
+      <div
+       
+        class="card-img-top pt-5 "
+        style="height: 25rem; background-color:#3A3A3C;"
+        >
+        <div class="card-img-overlay  d-flex justify-content-center "> 
+          <p class=" grey-text text-center" >{{.Params.TurboH}}</p>
+      </div> 
+      </div>
+      <div class="card-body">
+        
+            <h3 class="card-title">{{.Params.TurboH}}</h3>
+            <div class="row hyper-icons-row">
+                <div class="col-md-8">
+            <p class="card-text"></p>
+            <p class="card-text">
+              <small class="text-muted">{{.Params.TurboD}}</small>
+            </p>
+          </div>
+          <div class="col-md-4 hyper-icons">
+            <div class="hyper-icons-list float-md-right">
+              <ul class="list-unstyled float-links ">
+                <li>
+                  <a href="https://facebook.com/" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/TRANSO_IN"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://whatsapp.com/"
+                    ><i class="fa fa-whatsapp" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/ezyloads-logistics"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://gmail.com/"
+                    ><i class="fa fa-google" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container pb-5">
+      <p class="pt-5">{{ .Params.TurboP}}</p>
+      <p>{{ .Params.TurboP1}}</p>
+      <h4 class="ref">{{.Params.ref}}</h4>
+      <a
+        class="links link1"
+        href="https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/turbostart-founders-fellowship-honours-the-most-innovative-startups-in-the-country-heres-the-list-of-winners-from-the-first-edition-/articleshow/74458786.cms"
+        target="_blank"
+        >https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/turbostart-founders-fellowship-honours-the-most-innovative-startups-in-the-country-heres-the-list-of-winners-from-the-first-edition-/articleshow/74458786.cms</a
+      >
+      <div class="pt-5 mr-5">
+        <h3 class="pb-3 border-bottom">Continue Reading</h3>
+        <div class="card card-thumbnail pt-3 pb-3 border-bottom">
+            
+          <div class="col-md-4">
+            <img class="thumbnail-img rounded" src="/images/resources/nasscom.jpg" class="card-img-top" />
+          </div>
+          <div class="col-md-8">
+            <a href="/nasscom/"><h5 class="card-title pl-4">NASSCOM Centre of Excellence – IoT & AI Startup Showcase</h5></a>
+          </div>
+        </div>
+      <div class="card card-thumbnail pt-3 pb-3 border-bottom">
+        <div class="col-md-4">
+        <img class="thumbnail-img rounded" src="/images/resources/aditya1.png" class="card-img-top" />
+      </div>
+      <div class="col-md-8">
+        <a href="/aaditya/"><h5 class="card-title pl-4">Aditya Birla Group’s - Bizlabs:  The Digital AI Conclave</h5></a>
+      </div>
+      </div>
+    </div>
+    </div>
+  
+</div>

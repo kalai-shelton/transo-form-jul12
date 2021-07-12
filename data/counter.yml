@@ -1,0 +1,14 @@
+enable : true
+heading : "Move at the speed of your business"
+content: "Whether you’re making your first move towards digitisation, or already have existing technologies in place, Transo fills in all those missing gaps that’s keeping your logistics operation from working at the speed of your business."
+para: "It’s the only future-ready logistics solution around. We innovate with the times."
+
+counter_item: 
+  - title: "Workflow Digitization"
+    number: "100"
+
+  - title: "Process Automation"
+    number: "20"
+
+  - title: "Cost Optimization"
+    number: "20"

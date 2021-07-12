@@ -1,0 +1,105 @@
+{{ partial "resources/header.html" . }}
+<section class="resources-tab-section">
+    <div class="container">
+        <div class="panel with-nav-tabs panel-default ">
+            <div class="panel-heading tabslist">
+                <ul class="nav nav-tabs resourcetabs" style="justify-content:center; text-align:center">
+                    <a  href="/resources/" > 
+                       <h2> ALL </h2>
+                    </a>
+                   <!--<a href="/whitepapers/" > <h2> {{ .Params.whitepapersTab }} </h2> </a>-->
+                   <a  href="/blogs-updates/" > <h2>  Blog & Updates </h2> </a>
+                    <a class="active" href="/inthenews/" > <h2>  In The News </h2></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="blogs-pages">
+    <div class="container">
+    <div class="card mb-3 border-bottom">
+        <img src="{{.Params.NascomImg}}" class="card-img-top pt-5"style="height: 25rem;"  alt="...">
+        <div class="card-body">
+           
+          <h3 class="card-title">{{.Params.NascomH}}</h3>
+          <div class="row">
+            <div class="col-md-8">
+          <p class="card-text"></p>
+          <p class="card-text "><small class="text-muted">{{.Params.NascomD}}</small></p>
+        </div>
+        <div class="col-md-4 hyper-icons" >
+            <div class="hyper-icons-list float-md-right" >
+              <ul class="list-unstyled float-links "  >
+                <li>
+                  <a href="https://facebook.com/" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/TRANSO_IN"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://whatsapp.com/"
+                    ><i class="fa fa-whatsapp" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/ezyloads-logistics"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://gmail.com/"
+                    ><i class="fa fa-google" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container  pb-5">
+<p class="pt-5">{{ .Params.NascomP1}}</p>
+<p >{{ .Params.NascomP2}}</p>
+<h4 class="ref">{{.Params.ref}}</h4>
+<div class="pt-2">
+            <a class="links"href="https://community.nasscom.in/communities/digital-transformation/healthtech-and-life-sciences/the-9th-edition-of-lhif-underlines-vaccine-trails-and-the-need-to-optimize-the-supply-chain.html"target="_blank">https://community.nasscom.in/communities/digital-transformation/healthtech-and-life-sciences/the-9th-edition-of-lhif-underlines-vaccine-trails-and-the-need-to-optimize-the-supply-chain.html</a>
+        </div> 
+        <div class="pt-3">
+        <a class="links "href="https://www.linkedin.com/showcase/lhif-%E2%80%93-a-nasscom-healthcare-initiative/posts/?feedView=all"target="_blank">https://www.linkedin.com/showcase/lhif-%E2%80%93-a-nasscom-healthcare-initiative/posts/?feedView=all </a>
+         </div>
+
+         <div class="pt-5 mr-5">
+            <h3 class="pb-3 border-bottom">Continue Reading</h3>
+            <div class="card card-thumbnail pt-3 pb-3 border-bottom">
+              <div class="col-md-4">
+                <img class="thumbnail-img rounded" src="/images/resources/aditya1.png" class="card-img-top" />
+              </div>
+              <div class="col-md-8">
+                <a href="/aaditya/"><h5 class="card-title pl-4">Aditya Birla Group’s - Bizlabs: The Digital AI Conclave</h5></a>
+              </div>
+            </div>
+            <div class="card card-thumbnail pt-3 pb-3 border-bottom">
+              <div class="col-md-4 ">
+              <div  class="card-img-top grey-text-thumb ">
+                <div class="card-img-overlay  d-flex justify-content-center "> 
+                  <p class="text-left thumb-text pl-4">Turbostart Founders’ Fellowship First Edition 2020</p>
+              </div> 
+               </div>
+            </div>
+            <div class="col-md-8">
+              <a href="/turbostart/"><span><h5 class="card-title pl-4">Turbostart Founders’ Fellowship First Edition 2020</h5></span></a>
+            </div>
+            </div>
+        </div>
+</div>
+</div>
+

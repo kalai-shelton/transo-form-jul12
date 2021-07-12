@@ -1,0 +1,22 @@
+{{ with .Site.Params.simplify }}
+  {{ if .enable }}
+  {{ "<!-- Site Simplify Start -->" | safeHTML }}
+  <section class="home-simplify">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+            <h2>
+             <span class="simply-head">   {{ .heading }}</span> <br/>{{ .heading1 }}
+            </h2>
+            <p>{{ .para1 }}</p>
+            <a href="features"><button aria-label="features" class="digit-btn">{{ .buttonValue }}</button>
+              </a>
+            </div>
+        <div class="col-md-7 streamline-bg"  style="background-image:url('.{{.simplifyImg}}');" >
+        </div>
+      </div>
+    </div>
+</section>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}

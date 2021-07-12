@@ -1,0 +1,139 @@
+.contactSection{
+  background: #F7F7F7;
+}
+
+ .conSection1{
+   padding-bottom: 30px;
+   margin-bottom: 30px;
+  border-bottom-style:dotted;
+  border-width: 2px;
+  border-color:#FAAD26; 
+ } 
+
+.site-contact{
+  padding: 10px 0 100px;
+  background: $background-color-secondary;
+  
+  @include mobile{
+    margin-top: -30px;
+    padding: 35px 0 100px;
+  }
+  &-title{
+    font-weight: 700;
+    @include tablet{
+      font-size: 40px;
+    }
+    span{
+      color: $primary-color;
+    }
+  }
+  &-form{
+    margin-top: 40px;
+    h4{
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      letter-spacing: 3px;
+      @include tablet{
+        font-size: 20px;
+      }
+      @include desktop{
+        margin-bottom: 70px;
+      }
+    }
+  }
+}
+
+.form-control {
+  margin-bottom: 30px;
+}
+
+.contactpart {
+  padding-top: 140px;
+  font-size: 18px;
+  font-family:$secondary-font ;
+//padding-left:400px;
+background: #FAAD26;
+@include desktop{
+  padding-left:90px;
+  padding-top: 180px;
+ 
+}
+@include tablet{
+  padding-top: 50px;
+}
+@include mobile {
+  padding-top: 80px;
+  padding-left:30px;
+  padding-bottom: 60px;
+}
+}
+
+.contactpart2 {
+  padding-left:30px;
+
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+.btn-contact {
+padding: 10px;
+width: 127px;
+background: #3057E3;
+border: 1px solid #3057E3;
+border-radius: 25px;
+font-family:Montserrat;
+color: white;
+font-style: normal;
+margin-top: 10px;
+}
+.contact-custom-background {
+  padding:20px;
+ /* background: linear-gradient(90deg, $background-color-primary 100%, $background-color-default 50%);*/
+}
+
+.contactPartTitle1 {
+color:$text-color-tertiary !important;
+}
+
+
+.contactImg {
+width: 100%;
+height: auto;
+margin-top: -30px;
+}
+.contactPartTittle2{
+  color:$text-color-tertiary
+}
+.terms{
+  padding: 40px 20px;
+
+}
+
+.address-text{
+  
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 350;
+ padding-left: 50px;
+line-height: 18px;
+
+}
+.policy{
+  padding-top: 120px;
+}
+.policy h1{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.policy h5{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.policy p{
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.policy h6{
+font-weight: 500;
+}

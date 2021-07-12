@@ -1,0 +1,39 @@
+{{ with .Site.Params.movespeed }}
+{{ if .enable }}
+{{ "<!-- Site Clients Start -->" | safeHTML }}
+<section class="home-movespeed">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>
+            {{ .heading }}
+          </h1>
+          <p>
+            {{ .para1 }}
+          </p>
+          <p>
+            {{ .para2 }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col move-circles">
+      <div class="col-md-4 move-dot">
+        <h2> {{.circle1Value}}%</h2>
+        <h3> {{.circle1heading}} </h3>
+      </div>
+
+      <div class="col-md-4 move-dot">
+        <h2> {{.circle2Value}}%</h2>
+        <h3> {{.circle2heading}} </h3>
+      </div>
+
+      <div class="col-md-4 move-dot">
+        <h2> {{.circle3Value}}%</h2>
+        <h3> {{.circle3heading}} </h3>
+      </div>
+    </div>
+</section>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}

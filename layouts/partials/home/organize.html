@@ -1,0 +1,36 @@
+{{ with .Site.Params.organize }} {{ if .enable }} {{ "<!-- Site Clients Start -->"|safeHTML}}
+<section class="home-organize">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>
+          {{ .heading1 }} <br />
+          <span class="heading2"> {{.heading2}} </span>
+        </h2>
+        <p>{{ .para1 }}</p>
+        <p class="orgP">{{ .para2 }}</p> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="org3section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 jumbotron1 shipperbg">
+        <h3 class="shipperbgHead align-self-sm-center">{{.img1Value}}</h3>
+      </div>
+
+      <div class="col-md-4 jumbotron1 driverbg">
+        <h3 class="driverbgHead justify-content-sm-center">{{.img2Value}} </h3>
+      </div>
+
+    <div class="col-md-4 jumbotron1 carrierbg">
+        <h3 class="carrierbgHead justify-content-sm-center">{{.img3Value}}</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{{ "<!-- Site Hero End -->" | safeHTML }} {{ end }} {{ end }}

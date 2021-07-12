@@ -1,0 +1,64 @@
+<section class="industry-tab-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="industry-tab-content">
+                    <h1>
+                        {{ .Params.ourSolutiontab }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="panel with-nav-tabs panel-default">
+            <div class="panel-heading tabslist">
+                <ul class="nav nav-tabs" style="justify-content: center;">
+                    <a  class="solutiontabs active" href="#tab1default" data-toggle="tab">
+                        <h2>{{.Params.carriersTab}} </h2>
+                    </a>
+                    <a class="solutiontabs" href="#tab2default" data-toggle="tab">
+                        <h2> {{.Params.driversTab}}</h2>
+                    </a>
+                    <a class="solutiontabs" href="#tab3default" data-toggle="tab">
+                        <h2> {{.Params.shippersTab}}</h2>
+                    </a>
+                </ul>
+            </div>
+            <div class="panel-body" >
+                <div class="tab-content contentTab">
+                    <div class="tabcontent" id="tab1default">
+                        {{ partial "features/carriers.html" . }}
+                    </div>
+                    <div class="tabcontent" id="tab2default" style="display: none;">
+                        {{ partial "features/drivers.html" . }}
+                    </div>
+                    <div class="tabcontent" id="tab3default" style="display: none;">
+                        {{ partial "features/shippers.html" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+    var tabs = document.querySelectorAll(".tabslist ul  a");
+    var tabcontent = document.querySelectorAll(".tabcontent");
+    tabs.forEach(function (tab, tab_index) {
+        tab.addEventListener("click", function () {
+            tabs.forEach(function (tab) {
+                tab.classList.remove("active");
+            })
+            tab.classList.add("active");
+
+            tabcontent.forEach(function (contentTab, contentTab_index) {
+                if (contentTab_index == tab_index) {
+                    contentTab.style.display = "block";
+                }
+                else {
+                    contentTab.style.display = "none";
+                }
+            })
+        })
+    })
+</script>

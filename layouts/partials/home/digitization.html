@@ -1,0 +1,30 @@
+{{ with .Site.Params.digitization }}
+{{ if .enable }}
+{{ "<!-- Site Connect Digitize -->" | safeHTML }}
+<section class="home-digitize">
+  <div class="container">
+    <div class="row">
+    <div class="d-md-inline-flex">
+      <div class="col-md-5">
+        
+        <h2 class="digi-headings">
+          <span class="digi-heading">{{ .heading }} <br /></span>{{.heading1}}<br />{{.heading2}}
+        </h2>
+        <p>
+          {{.para1}}
+        </p>
+        <a href="oursolution"><button aria-label="digitization features" class="digit-btn"> 
+          {{.buttonValue}} 
+        </button></a>
+      </div>
+      <div class="col-md-7">
+        <img class="digi-img" src="{{ .digitizeImg }}" />
+      </div>
+    
+    </div>
+  </div> 
+  </div>
+</section>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}

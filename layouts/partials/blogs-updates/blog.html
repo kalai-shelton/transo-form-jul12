@@ -1,0 +1,51 @@
+{{ partial "resources/header.html" . }}
+<section class="resources-tab-section">
+    <div class="container">
+        <div class="panel with-nav-tabs panel-default ">
+            <div class="panel-heading tabslist">
+                <ul class="nav nav-tabs resourcetabs" style="justify-content:center; text-align:center">
+                    <a  href="/resources/" > 
+                       <h2> ALL </h2>
+                    </a>
+                  <!--<a href="/whitepapers/" > <h2> {{ .Params.whitepapersTab }} </h2> </a>-->
+                   <a class="active" href="/blogs-updates/" > <h2>  Blog & Updates </h2> </a>
+                    <a href="/inthenews/" > <h2>  In The News </h2></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="blogs-pages">
+<section class="container">
+    
+   <div class="row" >
+       <div class="col-md-6">
+    <div class="card blog-card">
+        <a href="/hyper-collaborative/"><img src="{{.Params.collaborativeImg}}"  class="card-img-top"  alt="collaborativeImg">
+<h5 class=" pt-3">Hyper-Collaborative Business Processes in the Wake of a Pandemic</h5></a>
+   </div>
+</div>
+<div class="col-md-6">
+<div class="card blog-card ship-card" >
+    <a href="/shipments/"><img src="{{.Params.shipmentTransistImg}}"  class=" card-img-top" alt="ShipmentImg" >
+    <h5 class=" pt-3">Shipments In-Transit information – Critical to logistics efficiency</h5></a>
+   </div>
+</div>
+<div class="col-md-6">
+   <div class="card blog-card" >
+    <a href="/connected-logistics/"><img src="{{.Params.connectedLogisticsImg}}"  class="card-img-top"  alt="LogisticImg">
+    <h5 class=" pt-3">Connected Logistics</h5></a>
+   </div>
+</div>
+<div class="col-md-5 ">
+   <div class="card blog-card freight-card" >
+    <a href="/freight-liability/" ><img src="{{.Params.freightOfLiabilityImg}}"  class="card-img-top"  alt="LiabilityImg">
+    <h5 class=" pt-3">The Freight of Liability - The Dependence on Agents in a Growing Unorganised Economy</h5></a>
+   </div>
+</div>
+</div>
+
+</section>
+</div>
+

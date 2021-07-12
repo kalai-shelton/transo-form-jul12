@@ -1,0 +1,24 @@
+{{ with .Site.Params.testimonial }}
+  {{ if .enable }}
+  {{ "<!-- Site Testimonial Start -->" | safeHTML }}
+  <section class="home-testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 testimonial-img">
+          <img width="60%" src="{{.testimonialClientImg}}">
+        </div>
+        <div class="col-md-6">
+          <div class="testimonial-content">
+          
+           <p><div class="quotes">"</div> <div class="quotes-para">{{ .para1 }}</div><div class="quotes quotes-close">"</div></p>
+          
+            <h6>{{.testimonialName}}</h6>
+            <h6>{{.testimonialDesignation}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{{ "<!-- Site Testimonial  End -->" | safeHTML }}
+{{ end }}
+{{ end }}

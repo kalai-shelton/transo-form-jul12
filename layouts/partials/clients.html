@@ -1,0 +1,16 @@
+{{ with .Site.Data.clients }}
+  {{ if .enable }}
+  <section class="site-client-Page">
+          <div class="site-client">
+            <h2>{{ .title }}</h2>
+          </div>
+          <div class="site-client-wrapper">
+            {{ range .client_logos }}
+            <div class="site-client-item">
+              <img src="{{ . | absURL }}" alt="client-logo">
+            </div>
+            {{ end }}
+          </div>
+  </section>
+  {{ end }}
+{{ end }}

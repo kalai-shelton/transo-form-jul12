@@ -1,0 +1,9 @@
+<svg  height="10%" width="60%" >
+  <g fill="none" stroke="#FAAD26" stroke-width="4">
+    <path stroke-dasharray="5,5" d="M5 10 l150 0" stroke-linecap="round" />
+ <circle cx="7" cy="9" r="5" 
+      fill="#FAAD26" />
+      <circle cx="150" cy="9" r="5" 
+      fill="#FAAD26" />
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+{{ with .Site.Params.connect }}
+  {{ if .enable }}
+  {{ "<!-- Site Connect Start -->" | safeHTML }}
+  <section class="home-connect">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h2>
+              <span class="connect-heading" >{{ .heading }}</span><br/> {{.heading1}}
+            </h2>
+            
+            <!--<img class="connect-img"src="{{ .connectImg }}" />
+            <img class="techlogos tLogo1"src="{{ .techlogo1 }}" />
+            <img class="techlogos tLogo2"src="{{ .techlogo2 }}" />
+            <img class="techlogos tLogo3"src="{{ .techlogo3 }}" />
+            <img class="techlogos tLogo4"src="{{ .techlogo4 }}" />
+            <img class="techlogos tLogo5"src="{{ .techlogo5 }}" />
+            <img class="techlogos tLogo6"src="{{ .techlogo6 }}" />
+            <img class="techlogos tLogo7"src="{{ .techlogo7 }}" />
+            <img class="techlogos tLogo8"src="{{ .techlogo8 }}" />
+            <img class="techlogos tLogo9"src="{{ .techlogo9 }}" />
+            <img class="techlogos tLogo10"src="{{ .techlogo10 }}" />
+            <img class="techlogos tLogo11"src="{{ .techlogo11 }}" />-->
+            
+          </div>
+      </div>
+    </div>
+</section>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}

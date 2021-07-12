@@ -1,0 +1,14 @@
+{{ "<!-- Site Hero Start -->" | safeHTML }}
+<section class="jumbotron features-bg">
+  <div class="container">
+    <span class="">
+      <h1 class="featureHH">
+        {{.Params.featureHeroHeading1}} <br />
+        {{.Params.featureHeroHeading2}} <br />
+        {{.Params.featureHeroHeading3}}
+      </h1>
+      <h4 class="featureHP">{{ .Params.featureHeroPara }}</h4>
+    </span>
+  </div>
+</section>
+{{ "<!-- Site Hero End -->" | safeHTML }}

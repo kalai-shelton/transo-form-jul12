@@ -1,0 +1,83 @@
+{{ partial "resources/header.html" . }}
+<section class="resources-tab-section">
+    <div class="container">
+        <div class="panel with-nav-tabs panel-default ">
+            <div class="panel-heading tabslist">
+                <ul class="nav nav-tabs resourcetabs" style="justify-content:center; text-align:center">
+                    <a  href="/resources/" > 
+                       <h2> ALL </h2>
+                    </a>
+                  <!--<a href="/whitepapers/" > <h2> {{ .Params.whitepapersTab }} </h2> </a>-->
+                   <a href="/blogs-updates/" > <h2>  Blog & Updates </h2> </a>
+                    <a class="active"  href="/inthenews/" > <h2>  In The News </h2></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="blogs-pages">
+<section class="container">
+    
+   <div class="row news-cards" >
+       <div class="col-md-6">
+    <div class="card blog-card"  >
+        <a href="/aaditya/"><img src="{{.Params.AdityaImg}}"  class="card-img-top"  alt="collaborativeImg">
+<h5 class=" pt-3">{{.Params.AdityaH}}</h5></a>
+   </div>
+</div>
+<div class="col-md-6">
+   <div class="card blog-card" >
+    <a href="/nasscom/"><img src="{{.Params.NascomImg}}"  class=" card-img-top"  alt="ShipmentImg" >
+    <h5 class=" pt-3">{{.Params.NascomH}}</h5></a>
+   </div>
+</div>
+<div class="col-md-6">
+   <div class="card blog-card" >
+    <a href="/turbostart/">
+    <div class="card-img-top pt-5 "
+        style="height: 15rem; background-color:#3A3A3C;">
+        <div class="card-img-overlay  d-flex justify-content-center "> 
+          <p class="grey-text-card text-left pl-4" >{{.Params.TurboH}}</p>
+      </div> 
+      </div> 
+    <h5 class=" pt-3">{{.Params.TurboH}}</h5></a>
+   </div>
+   
+</div>
+</div>
+
+</section>
+</div>
+
+
+<!--<section class="news" >
+    <div class="container">
+        <div class="row">
+            <h1>{{.Params.AdityaH}}<br/></h1>
+            <p class="date">{{.Params.AdityaD}}<br/></p>
+            <p class=newspara1>{{.Params.AdityaP}}</p>
+            <img class="aditya"src="{{.Params.AdityaImg}}"/>
+            
+        </div>
+        <div class="row">
+            <h1>{{.Params.NascomH}}<br/></h1>
+            <p class="date">{{.Params.NascomD}}<br/></p>
+            <p class=newspara1>{{.Params.NascomP1}}<br/></p>
+            <p class=newspara2>{{.Params.NascomP2}}<br/></p>
+            <img class="aditya" src="{{.Params.NascomImg}}"/>
+            <img class="aditya" src="{{.Params.NascoImg1}}"/>
+            <h4 class="ref">{{.Params.ref}}</h4>
+            <a class="links"href="https://community.nasscom.in/communities/digital-transformation/healthtech-and-life-sciences/the-9th-edition-of-lhif-underlines-vaccine-trails-and-the-need-to-optimize-the-supply-chain.html"target="_blank">https://community.nasscom.in/communities/digital-transformation/healthtech-and-life-sciences/the-9th-edition-of-lhif-underlines-vaccine-trails-and-the-need-to-optimize-the-supply-chain.html</a>
+            <a class="links"href="https://www.linkedin.com/showcase/lhif-%E2%80%93-a-nasscom-healthcare-initiative/posts/?feedView=all"target="_blank">https://www.linkedin.com/showcase/lhif-%E2%80%93-a-nasscom-healthcare-initiative/posts/?feedView=all </a>
+        </div>
+        <div class="row">
+            <h1>{{.Params.TurboH}}</h1>
+            <p class="date">{{.Params.TurboD}}<br/></p>
+            <h2 class="turboP">{{.Params.TurboP}}<br/><br/></h2>
+            <p class="newspara3">{{.Params.TurboP1}}<br/></p>
+            <h4 class="ref">{{.Params.ref}}</h4>
+            <a class="links link1" href="https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/turbostart-founders-fellowship-honours-the-most-innovative-startups-in-the-country-heres-the-list-of-winners-from-the-first-edition-/articleshow/74458786.cms"target="_blank">https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/turbostart-founders-fellowship-honours-the-most-innovative-startups-in-the-country-heres-the-list-of-winners-from-the-first-edition-/articleshow/74458786.cms</a>
+        </div>
+    </div>
+</section>-->

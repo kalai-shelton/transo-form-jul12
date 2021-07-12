@@ -1,0 +1,14 @@
+{{ with .Site.Params.banner }}
+{{ if .enable }}
+{{ "<!-- Site Hero Start -->" | safeHTML }}
+<section  class="jumbotron home-bg">
+ <div class="container"> 
+  <span class="">
+    <h1 class="mobileHead">{{.heading1}}<br/> {{.heading2}}</h1>
+    <h4 class="mobileTag">{{ .tagline }}</h4>
+  </span>
+</div>
+</section>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,213 @@
+.top-banner-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  /*grid-template-rows: 350px;*/
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-content: center;
+  justify-content: center;
+
+  .banner-image-div {
+    grid-area: -1 / 1;
+  }
+  .banner-overlay-div {
+    grid-area: -1 / 1;
+  }
+  .banner-text-div {
+    grid-area: -1 / 1;
+  }
+}
+
+.banner-image {
+  display: grid;
+  width: 100%;
+  height:100%;
+  //margin-top: 20px;
+  object-fit: cover;
+}
+
+.banner-overlay-div {
+  display: grid;
+  max-width: 100%;
+  background: black;
+  background: linear-gradient(
+    60deg,
+    rgba(0, 0, 0, 0.7777485994397759) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.banner-text-div {
+  display: grid;
+  align-items: left;
+  margin-left: 25px;
+  margin-right: 25px;
+  
+  @include mobile {
+    align-items: center;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.banner-h1-text {
+  width: 40%;
+  font-style: Montserrat;
+  font-weight: bold;
+  color: white;
+
+  @include desktop {
+    font-size: 25px;
+  }
+}
+
+.banner-body-text {
+  width: 40%;
+  font-style: Roboto;
+  margin-top: 0.5em;
+  letter-spacing: 0.06em;
+  color: white;
+
+  text-decoration: none;
+  @include desktop {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+  }
+ 
+}
+
+.jumbotron {
+  height: 56.25vw;
+  color: white;
+  display: flex !important;
+  align-items: center;
+//margin-top: 100px;
+}
+  
+.home-bg {
+  background: url("../images/home/Homebackgroundpagedt.webp") no-repeat center;
+  background-size: cover;
+
+  height: 70vh;
+  @include tablet{
+    background: url("../images/mobile-images/mobileBanner1.png") no-repeat center;
+    background-size: cover; 
+    height: 100vw;
+  }
+  @include mobile-xs{
+    height: 70vh;
+  }
+}
+
+  h4 {
+    padding-top: 18px;
+    width: 35%;
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include desktop-lg {
+      width: 50%;
+    }
+    @include desktop {
+      width: 50%;
+    }
+    @include tablet {
+      width: 60%;
+    }
+    @include mobile {
+      padding-top: 10px;
+      width: 90%;
+    }
+    @include mobile-xs {
+      width: 100%;
+    }
+  }
+  .mobileHead {
+    @include mobile {
+      width: 100%;
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 48px;
+      @include mobile-xs{
+        padding-top: 20px;  
+      }
+    }
+  }
+  .mobileTag {
+    padding-bottom: 100px;
+    @include desktop{
+      width: 43%;
+    }
+    @include tablet{
+   padding-bottom: 280px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    @include mobile{
+      padding-bottom: 180px;
+      width: 100%;
+      font-size: 11px;
+      line-height: 15px;
+    }
+    
+  }
+
+
+/*.site-hero{
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-repeat:no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include desktop{
+    height: auto;
+    padding: 200px 0;
+  }
+  @include mobile{
+    padding: 150px 0;
+  }
+  &-content{
+    h1{
+      margin-bottom: 75px;
+      @include desktop-lg{
+        font-size: 50px;
+        margin-bottom: 50px;
+      }
+      @include mobile{
+        font-size: 40px;
+      }
+    }
+    &-buttons{
+      margin: 0;
+      padding: 0;
+      li{
+        display: inline-block;
+        @include mobile{
+          display: block;
+        }
+        &:not(:last-child){
+          margin-right: 30px;
+          @include mobile{
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+        }
+        .btn{
+          font-weight: 600;
+          @include mobile{
+            width: 90%;
+            margin: 0 auto;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  &-scroll{
+    position: absolute;
+    left: 50%; bottom: 70px;
+    transform: translateX(-50%);
+  }
+}*/

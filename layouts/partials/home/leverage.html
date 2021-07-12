@@ -1,0 +1,22 @@
+{{ with .Site.Params.leverage }}
+  {{ if .enable }}
+  {{ "<!-- Site Leverage Start -->" | safeHTML }}
+  <section class="home-leverage">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 streamline-bg"
+         style="background-image:url('.{{.leverageImg}}');" >
+        </div>
+        <div class="col-md-5">
+            <h2>
+              <span class="leverage-head" >{{ .heading }}</span> <br/>  {{ .heading1 }}
+            </h2  >
+            <p>{{ .para1 }}</p>
+            <a href="features#analytics"><button class="digit-btn">{{ .buttonValue }}</button>
+         </a> </div>
+      </div>
+    </div>
+</section>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}

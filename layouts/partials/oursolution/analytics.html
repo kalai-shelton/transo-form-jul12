@@ -1,0 +1,77 @@
+<section id="analytics">
+  <div class="container" >
+  <div class="col-md-8">
+    <h1 class="analytics-h1">{{ .Params.analyticsH }}</h1>
+    <h5 class="opOph5">{{ .Params.analyticsC }}</h5>
+  </div>
+  <div class="opOpBg" style="background-image: url('..{{ .Params.analyticsImg }}');">
+    
+  </div>
+  </div>
+</section>
+<section>
+  <div class="container " >
+    <div class="row justify-content-sm-center " >
+      <div class="col-sm-9 col-md-6 ">
+        <div>
+        <div class="row">
+        <div class="capOpH">
+          
+          <div class="d-inline-flex">
+            <div class="">
+              <h3 class="">
+                <span class="capOpH1"> {{ .Params.repH1 }}</span>
+                <span class="capOpH2">{{ .Params.repH2 }}</span>
+                <span class="capOpH2">{{ .Params.repH3 }}</span>
+              </h3>
+            </div>
+            <div class="">
+              <img
+                class="logoOpImg"
+                src="{{.Params.repImg}}"
+                alt="Transo analytics Image"
+                class="src"
+              />
+            </div>
+          </div>
+          <ul class="list-unstyled business">
+            <li>{{ .Params.repC }}</li>
+            <li style="line-height: 18px; padding-bottom:5px; padding-top: 3px;">{{ .Params.repC1 }}</li>
+            <li>{{ .Params.repC2}}</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-9 col-md-6 ">
+        <div class="row">
+        <div class="capOpH capOpHroute">
+         
+          <div class="d-inline-flex">
+            <div class="">
+              <h3>
+                <span class="capOpH1">{{ .Params.digDH1 }}</span> <br />
+                <span class="capOpH2"> {{ .Params.digDH2 }}</span>
+              </h3>
+            </div>
+            <div class="">
+              <img
+                class="logoOpImg "
+                src="{{.Params.digDImg}}"
+                alt="Transo Analytics Image2"
+                class="src"
+              />
+            </div>
+          </div>
+          <div class="optimise-list">
+          <ul class="list-unstyled route">
+            <li style="line-height: 18px; padding-bottom:5px; padding-top: 3px;">{{ .Params.digDC }}</li>
+            <li>{{ .Params.digDC1 }}</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      
+    </div>
+  </div>
+</section>

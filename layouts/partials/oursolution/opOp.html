@@ -1,0 +1,148 @@
+<section id="operations">
+  <div class="container">
+    <h2 class="opOph2">{{ .Params.opOpHeading }}</h2>
+   
+  <div class="row">
+  
+    <div class="col-md-4">
+      
+      <h5 class="opOph5">{{ .Params.opOpPara }}</h5>
+    </div>
+    <div class=" opOpBg col-md-8" style="background-image: url('..{{ .Params.opOpBgImg }}');">
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row justify-content-sm-center" >
+      <div class=" col-sm-9 col-md-6">
+        <div>
+        <div class="row">
+          
+          <div class="capOpH ">
+          <div class="d-inline-flex" >
+            <div class="">
+              <h3 >
+                <span class="capOpH1"> {{ .Params.capOpH1 }}</span> <br />
+                <span class="capOpH2">{{ .Params.capOpH2 }}</span>
+              </h3>
+            </div>
+            <div class="">
+              <img
+                class="logoOpImg"
+                src="{{.Params.capOpImg}}"
+                alt="Operational Optimization"
+                class="src"
+              />
+            </div>
+          </div>
+          <div class="optimise-list">
+          <ul class="list-unstyled ">
+            <li style="line-height: 18px; padding-bottom:5px; padding-top: 3px;">{{ .Params.capOpC }}</li>
+            <li>{{ .Params.capOpC1 }}</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+    <div>
+       <div class="row">
+          <div class="capOpH" >
+
+          <div class="d-inline-flex">
+            <div class="">
+              <h3>
+                <span class="capOpH1"> {{ .Params.trackOpH1 }}</span> <br />
+                <span class="capOpH2">{{ .Params.trackOpH2 }}</span>
+                
+              </h3>
+            </div>
+            <div class="">
+              <img
+                class="logoOpImg"
+                src="{{.Params.trackOpImg}}"
+                alt="Track Optimization"
+                class="src"
+              />
+            </div>
+          </div>
+          <div class="optimise-list">
+          <ul class="list-unstyled route">
+            
+            <li>{{ .Params.trackOpC }}</li>
+            <li>{{ .Params.trackOpC1 }}</li>
+            <li>{{ .Params.trackOpC2 }}</li>
+            <li>{{ .Params.trackOpC3 }}</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-sm-9 col-md-6 ">
+        <div>
+        <div class="row">
+         
+        <div class="capOpH capOpHroute">
+          <div class="d-inline-flex">
+            <div class="">
+              <h3 >
+                <span class="capOpH1"> {{ .Params.routeOpH1 }}</span> <br />
+                <span class="capOpH2">{{ .Params.routeOpH2 }}</span>
+              </h3>
+            </div>
+            <div class="">
+              <img
+                class="logoOpImg"
+                src="{{.Params.routeOpImg}}"
+                alt="Transo Cost Optimization"
+                class="src"
+              />
+            </div>
+          </div>
+          <div class="optimise-list">
+          <ul class="list-unstyled route">
+            <li style="line-height: 18px; padding-bottom:5px; ">{{ .Params.routeOpC }}</li>
+            <li style="line-height: 18px; padding-bottom:5px; padding-top: 6px;">{{ .Params.routeOpC1 }}</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+        </div>
+        <div>
+        <div class=" row">
+          <div class="capOpH">
+          <div class="d-inline-flex">
+            <div class="">
+              <h3 >
+                <span class="capOpH1"> {{ .Params.costOpH1 }}</span> <br />
+                <span class="capOpH2">{{ .Params.costOpH2 }}</span>
+              </h3>
+            </div>
+            <div class="">
+              <img
+                class="logoOpImg"
+                src="{{.Params.costOpImg}}"
+                alt="Transo Cost Optimization"
+                class="src"
+              />
+            </div>
+          </div>
+          <div class="optimise-list">
+          <ul class="list-unstyled">
+            <li>{{ .Params.costOpC }}</li>
+            <li style="line-height: 18px; padding-bottom:5px; padding-top: 5px;">{{ .Params.costOpC1 }}</li>
+            <li>{{.Params.costOpC2 }}</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

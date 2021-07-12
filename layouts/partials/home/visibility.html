@@ -1,0 +1,19 @@
+{{ with .Site.Params.visibility }}
+  {{ if .enable }}
+  {{ "<!-- Site Visibility Start -->" | safeHTML }}
+  <section class="home-visibility">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h1>
+              <span class="visi-head"> {{.heading }}</span> <br/> <h2> {{.heading1}} <br/> <span class="visi-head2"> {{ .heading2 }}</span></h2> 
+            </h1>
+            <a href="features">    <button aria-label="Features" class="visibile-btn">{{ .buttonValue }}</button>
+              </a>
+        </div>
+      </div>
+    </div>
+</section>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,108 @@
+{{ partial "resources/header.html" . }}
+<section class="resources-tab-section">
+    <div class="container">
+        <div class="panel with-nav-tabs panel-default ">
+            <div class="panel-heading tabslist">
+                <ul class="nav nav-tabs resourcetabs" style="justify-content:center; text-align:center">
+                    <a  href="/resources/" > 
+                       <h2> ALL </h2>
+                    </a>
+                <!--<a href="/whitepapers/" > <h2> {{ .Params.whitepapersTab }} </h2> </a>-->
+                   <a class="active" href="/blogs-updates/" > <h2>  Blog & Updates </h2> </a>
+                    <a href="/inthenews/" > <h2>  In The News </h2></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="blogs-pages">
+<div class="container pt-5 border-bottom">
+        <div class="card mb-3 " >
+            <img src="{{.Params.shipmentImg1}}" class="card-img-top" alt="..." style="height: 25rem;" >
+            <div class="card-body">
+                
+              <h3 class="card-title">{{.Params.shipH1}}</h3>
+              <div class="row">
+                <div class="col-md-8">
+              <p class="card-text">Srikanth M <br/><span><small class="text-muted">20th June 2020 <br/>srikanth@transo.in | Web: https://www.transo.in</small></span></p>
+              <p></small></p>
+              <p><small class="text-muted"></small></p>
+            </div>
+            <div class="col-md-4 hyper-icons" >
+                <div class="hyper-icons-list float-md-right" >
+                  <ul class="list-unstyled float-links  "  >
+                    <li>
+                      <a href="https://facebook.com/" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/TRANSO_IN"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://whatsapp.com/"
+                        ><i class="fa fa-whatsapp" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/company/ezyloads-logistics"
+                        ><i class="fa fa-linkedin" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://gmail.com/"
+                        ><i class="fa fa-google" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+              </div>
+          </div>
+        </div>
+    
+        <div class="container ">
+         <p class="pt-5">{{.Params.shipP1}}</p>
+         <p>{{.Params.shipP2}}</p>
+         <h5>{{.Params.shipH2}}</h5>
+         <p>{{.Params.shipP3}}</p>
+         <h5>{{.Params.shipH3}}</h5>
+         <p>{{.Params.shipP4}}</p>
+         <h5>{{.Params.shipH4}}</h5>
+         <p>{{.Params.shipP5}}</p>
+         <p>{{.Params.shipP6}}</p>
+         <div class="pt-5 mr-5">
+            <h3 class="pb-3 border-bottom">Continue Reading</h3>
+          <div class="card card-thumbnail pt-3 pb-3 border-bottom">
+            <div class="col-md-4">
+            <img class="thumbnail-img rounded" src="/images/resources/transo-connected-logistics1.jpg" class="card-img-top" />
+          </div>
+          <div class="col-md-8">
+            <a href="/connected-logistics/"><h5 class="card-title pl-4">Connected Logistics</h5></a>
+          
+          </div>
+          </div>
+          <div class="card card-thumbnail pt-3 pb-3 border-bottom">
+            <div class="col-md-4">
+            <img class="thumbnail-img rounded" src="/images/resources/transo-hyper-collaborative-blog1.jpg" class="card-img-top" />
+          </div>
+          <div class="col-md-8">
+            <a href="/hyper-collaborative/"><h5 class="card-title pl-4">Hyper-Collaborative Business Processes in the Wake of a Pandemic</h5></a>
+          </div>
+          </div>
+          <div class="card card-thumbnail pt-3 pb-3 border-bottom">
+            <div class="col-md-4">
+            <img class="thumbnail-img rounded" src="/images/resources/transo-freightof-liability1.jpg" class="card-img-top" />
+            
+          </div>
+          <div class="col-md-8"><a href="/freight-liability/"><h5 class="card-title pl-4">The Freight of Liability - The Dependence on Agents in a Growing Unorganised Economy</h5></a>
+          </div>
+          </div>
+        </div>
+        </div>
+</div>

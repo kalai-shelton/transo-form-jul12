@@ -1,0 +1,20 @@
+.navbar-collapse
+{
+  justify-content: flex-end; 
+}
+.navi{
+  &:hover{
+    color: $text-color-primary ;
+  }
+}
+.dropdown-menu {
+  left:auto;
+  margin-top: -20px;
+  @include desktop{
+    margin-top: auto;
+  }
+}
+.navi:hover>.dropdown-menu {
+  display: block;
+ 
+}

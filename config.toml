@@ -1,0 +1,271 @@
+baseURL       = "/"
+relativeURLs = "true"
+#canonifyURLs =  "true"
+#uglyURLs     = "true"
+languageCode  = "en-us"
+title         = "Transo | Logistics Made Smarter"
+summarylength = 25
+ 
+# Site Menus
+[menu]
+  # Navbar Menus
+  #[[menu.nav]]
+   # identifier = "home"
+   # name    = "Home"
+   # url     = "/"
+   # weight  = 1
+   
+  [[menu.nav]]
+    identifier = "product"
+    name = "Product"
+    url = "#"
+    weight = 2 
+   
+  [[menu.nav]]
+    identifier = "oursolution"
+    name = "Solution"
+    url = "/oursolution/"
+    parent = "product"
+    weight = 3 
+
+   [[menu.nav]]
+    identifier = "features"
+    name = "Features"
+    url = "/features/"
+    parent = "product"
+    weight = 4 
+
+   [[menu.nav]]
+    identifier = "industry"
+    name = "Industries"
+    url = "/industry"
+    parent = "product"
+    weight =  5
+
+
+    [[menu.nav]]
+      identifier = "aboutus"
+      name    = "About "
+      url     = "#"
+      weight  = 6
+
+    [[menu.nav]]
+      identifier = "resources"
+      name = "Resources"
+      url = "/resources"
+      parent = "aboutus"
+      weight = 7 
+      
+  [[menu.nav]]
+    identifier = "about"
+    name    = "About Us"
+    url     = "/about"
+    parent = "aboutus"
+    weight  = 8
+
+  [[menu.nav]]
+    identifier = "contact"
+    name    = "Contact Us"
+    url     = "/contact"
+    weight  = 9
+
+  [[menu.nav]]
+    identifier = "login"
+    name    = "Login"
+    url     = "/contact"
+    weight  = 10
+
+
+# Site Params
+[params]
+  logo = "/images/logo.png"
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  SiteDescription  = "Digital solution that simplifies logistics. Digitise workflows, automate processes and optimise costs. Streamline all stakeholders in your logistics ecosystem." 
+  #description = "Roxo Hugo themes | Design Agency Template by StaticMania"
+  #author = "StaticMania"
+  # Google Analitycs
+  googleAnalitycsID = "Your ID"
+  # We're using formspree.io for form handling, paste your formspree url below
+  #formspreeFormUrl  = "https://getform.io/f/609507bc-75c7-4ea8-a4a5-e8050d1602b9"
+  salesFormUrl  = "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+  contactPartTitle = "Let's set up "
+  contactPartTitle1 =" a demo"
+  contactPartC = "Please fill your contact details"
+
+
+  # Navbar Action Button
+  [params.navAction]
+    status  = true
+    name    = "Get in touch"
+    url     = "contact"
+  
+  # Banner Section 
+  [params.banner]
+    enable                = true
+    background_image      = "/images/backgrounds/transo-hero-bg.jpg"
+
+    heading1               = "Logistics made"
+    heading2               = "smarter."    
+    tagline               = "Empower every stakeholder in your logistics operation with a digital solution that simplifies their lives. With TRANSO, you drive value and efficiency, not just goods."
+    primary_button        = "See Our Works"
+    primary_button_url    = "portfolio"
+    secondary_button      = "Connect with Us"
+    secondary_button_url  = "contact"
+
+# Banner Move At Speed
+[params.movespeed]
+    enable                = true
+    heading               = "Move at the speed of your business."
+    para1                 = "Whether you’re making your first move towards digitisation, or already have existing technologies in place, TRANSO fills in all those missing gaps that’s keeping your logistics operation from working at the speed of your business."
+    para2                 = "It’s the only future-ready logistics solution around. We innovate with the times."
+    circle1Value          = "100"
+    circle1heading        = "WORKFLOW DIGITISATION"
+    circle2Value          = "100"
+    circle2heading        = "PROCESS AUTOMATION"
+    circle3Value          = "30"
+    circle3heading        = "COST OPTIMIZATION"
+
+# Banner Clients
+[params.clients]
+    enable                = false
+    heading               = "Our Clients"
+    logo1                 = "/images/clients/mahindra-logo.webp"
+    logo2                 = "/images/clients/jyothylabs-logo.webp"
+
+# Banner organize
+[params.organize]
+    enable                = true
+    heading1               = "Organise the unorganised links in your supply chain,"
+    heading2               = "with an app that empowers each stakeholder within it"
+    para1                 = "Shippers, Carriers, and Drivers - different personas, with unique roles and responsibilities within the logistics ecosystem. By digitising your operations, you can streamline each of these stakeholders’ needs, while achieving complete visibility and transparency of your supply chain."
+    para2                 = "Unavailability of data can never again come in the way of your success."
+    img1                  = "/images/home/shipper-tp.webp"
+    img1Value             = "SHIPPER"
+    img2                  = "/images/home/driver-tp.webp"
+    img2Value             = "DRIVER"
+    img3                  = "/images/home/carrier-tp.webp"
+    img3Value             = "CARRIER"
+
+# Banner Connect
+[params.connect]
+    enable                = true
+    heading               = " Connects with all the existing technologies and supply chain "
+    heading1               = "systems, easy access across every device and location & easy to implement and customise."
+    #connectImg            = "/images/home/techlogos.webp"
+    
+
+
+# Banner DIGITISATION
+[params.digitization]
+    enable                = true
+    buttonvalue           = "Explore"
+    digitizeimg           = "/images/home/digitize.webp"
+    heading               = "Here’s how our digitisation and automation technology"
+    heading1              = "actually solves operational management for you, "
+    heading2              = "in Real-Time."
+    para1                 = "Replace the complexity of logistics with ease and predictability. "
+
+# Banner visibility
+[params.visibility] 
+    enable                = true
+    heading               = "Get complete visibility and control "
+    heading1              ="An end-to-end optimisation experience that"
+    heading2              = "streamlines operations, simplifies experience,  and leverages analytics."
+    buttonValue           = "View product features"
+
+# Banner Streamline
+[params.streamline]
+    enable                = true
+    heading               = "Streamline and optimise operations"
+    heading1               = "through one unified platform."
+    streamlineImg         = "/images/home/streamlineImg.webp"
+    para1                 = "From digital fulfillment management to fleet tracking and visibility into operational inefficiencies - get a unified view of it all. No GPS device is needed, any Android smartphone/tablet will work optimally."
+    buttonValue           = "Explore"
+ 
+
+# Banner Simplify
+[params.simplify]
+    enable                = true
+    heading               = "Simplify your users’ processes with"
+    heading1               = "automation and engagement."
+    simplifyImg            = "/images/home/simplifyImg.webp"
+    para1                 = "Empower the users to scale their work and increase productivity by reducing manual data entry on multiple screens at each handshake."
+    buttonValue           = "Explore"
+
+# Banner Leverage
+[params.leverage]
+    enable                = true
+    heading               = "Leverage analytics"
+    heading1               = "for more confident, timely decision-making."
+    leverageImg           = "/images/home/leverageImg.webp"
+    para1                 = "Effectively analyse your operational performance, optimise cost and improve delivery management with actionable insights and visualisation."
+    buttonValue           = "Explore"
+
+# Banner testimonial
+[params.testimonial]
+    enable                = false
+    para1               = "We were able to increase our delivery capacity by 50%. Not just that, 80% customers now feel we’re the most reliable logistics partner for their business."
+    testimonialName     = "Mr.Businessman"
+    testimonialDesignation = "Owner, Business Inc."
+    testimonialClientImg = "/images/home/testimonialclient.webp"
+    invCommaOpenImg = "/images/home/openquote.png"
+    invCommaCloseImg ="/images/home/closequote.png"
+
+  [params.portfolio]
+    enable    = true
+    title     = "OUR RECENT WORKS"
+    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
+
+  [params.call_to_action]
+    enable              = true
+    background_image    = "/images/backgrounds/cta-background.jpg"
+    title               = "LET’S WORK TOGETHER"
+    primary_button      = "Submit Query"
+    primary_button_url  = "contact"
+    secondary_button    = "Not Convinced"
+    secondary_button_url = "portfolio"
+
+  [params.footer]
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      title   = "Contact Info"
+      address = "713 Elmwood St.<br>Prior Lake, MN 55372"
+      phone   = "409-896-1444"
+      email   = "info@roxo.co"
+      # Footer Sitemap
+      [params.footer.sitemap]
+        title   = "Sitemap"
+        [[params.footer.sitemap.link]]
+          name = "About Company"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Projects"
+          url  = "portfolio"
+        [[params.footer.sitemap.link]]
+          name = "Blog"
+          url  = "blog"
+        [[params.footer.sitemap.link]]
+          name = "Contact"
+          url  = "contact"
+      # Footer Social Media
+      [params.footer.social]
+      
+        title   = "Social Media"
+        [[params.footer.social.link]]
+          name = "Medium"
+          url  = "#"
+          [[params.footer.social.link]]
+          name = "Behance"
+          url  = "#"
+        [[params.footer.social.link]]
+          name = "Dribbble"
+          url  = "#"
+        [[params.footer.social.link]]
+          name = "Instagram"
+          url  = "#"
+      # Footer Service
+      [params.footer.service]
+        title       = "We help brands:"
+        description = "develop design solutions<br>produce valuable cultural content<br>create fresh brand experience"
+        

@@ -1,0 +1,45 @@
+{{ partial "resources/header.html" . }}
+<section class="resources-tab-section">
+    <div class="container">
+        <div class="panel with-nav-tabs panel-default ">
+            <div class="panel-heading tabslist">
+                <ul class="nav nav-tabs resourcetabs" style="justify-content:center; text-align:center">
+                    <a  href="/resources/" > 
+                       <h2> ALL </h2>
+                    </a>
+                    <a class="active" href="/whitepapers/" > <h2>   Whitepapers </h2> </a>
+                   <a  href="/blogs-updates/" > <h2>  Blog & Updates </h2> </a>
+                    <a href="/inthenews/" > <h2>  In The News </h2></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="blogs-pages">
+<div class="container pt-5">
+
+<div class="row" style="justify-content:center; padding-bottom: 30px;">
+    <div class="col-md-3 resource-whitepaper">
+        <div class="whitepaperdiv"> <img class="whitepaperImg" src="{{.Params.whitepaperImg}}" />
+            <p class="blogPara"> {{.Params.ThreePLCaseStudyC}} </p>
+            <button aria-label="case study" class="whitepaper-btn btn1">{{.Params.wpButtonValue}} </button>
+        </div>
+    </div>
+    
+    <div class="col-md-3 resource-whitepaper">
+        <div class="whitepaperdiv"> <img class="whitepaperImg" src="{{.Params.BlogUpdatesImg}}" />
+            <p class="blogPara"style=" margin-top: 19px;">{{.Params.ThreePLCaseStudyC}} </p>
+            <button aria-label="whitepaper " class="whitepaper-btn btn2">{{.Params.wpButtonValue}} </button>
+        </div>
+    
+</div>
+    <div class="col-md-3 resource-whitepaper">
+        <div class="whitepaperdiv"> <img class="whitepaperImg" src="{{.Params.InthenewsImg}}" />
+            <p class="blogPara" style=" margin-top: 32px;">{{.Params.ThreePLCaseStudyC}} </p>
+            <button aria-label="Three PL Case Study" class="whitepaper-btn btn3">{{.Params.wpButtonValue}} </button>
+        </div>
+    </div>
+</div>
+</div>
+</div>

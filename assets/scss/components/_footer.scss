@@ -1,0 +1,114 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+.site-footer{
+  background: $background-color-fifth;
+  padding: 10px 0;
+  &-logo{
+    @include mobile{
+      text-align: center;
+    }
+  }
+  &-widget{
+    @include desktop{
+      margin-bottom: 40px;
+    }
+    @include mobile{
+      text-align: center;
+    }
+    &-title{
+      color: $white;
+      margin-bottom: 30px;
+      @include desktop{
+        margin-bottom: 20px;
+      }
+    }
+    &-description{
+      color: $white;
+      line-height: 30px;
+      a{
+        color: $white;
+      }
+    }
+    &-links{
+      margin: 0;
+      padding: 0;
+      li{
+        list-style: none;
+        a{
+          color: $white;
+          transition: all 0.3s $site-ease;
+          display: block;
+        }
+        &:not(:last-child){
+          a{
+            padding-bottom: 9px;
+          }
+        }
+      }
+    }
+    &-top{
+      @include mobile{
+        text-align: center;
+        display: block;
+      }
+      img{
+        margin-bottom: 20px;
+      }
+      p{
+        color: $white;
+      }
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  .section-f{
+    display: flex;
+    padding-top: 10px;
+  
+  }
+  .footer-logos{
+    padding-left: 220px;
+    @include mobile{
+      padding-top: 90px;
+      padding-left: 0px;
+      padding-bottom: 20px;
+      margin-left: -190px;
+      margin-top: 40px;
+    }
+  }
+  .fa {
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 25px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  
+  .footer-links li,.footer-links1 li{
+    font-family: $primary-font;
+    padding: 4px;
+    @include mobile{
+      margin-left: 30px;
+    }
+  }
+  
+  .ourP,.aboutU,.contactU{
+    font-size: 16px;
+    
+   
+  }
+}
+  .footer-links,.footer-links1,.site-footer-logo,.footer-logos{
+    padding: 30px 0px;
+    @include mobile{
+      padding: 0px;
+    }
+  }

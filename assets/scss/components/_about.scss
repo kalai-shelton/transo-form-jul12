@@ -1,0 +1,155 @@
+.heroAboutbody {
+margin-top:20px;
+margin-left:20px;
+justify-content: center;
+@include mobile {
+margin-left:0;
+text-align: center;
+}
+}
+.site-about-header1{
+  margin-top:-30px ;
+  
+}
+
+.aboutHead{
+  padding-top: 0px;
+  @include mobile{
+    padding-top: 45px; 
+   }
+}
+.aboutHead1{
+  text-align: center;
+  
+}
+.site-about-header {
+  padding-top: 80px;
+  background-color: $background-color-secondary;
+@include mobile {
+padding-top: 20px;
+}
+}
+.exH,.mpara{
+  padding-top: 20px;
+
+}
+
+
+.heroAboutPara2 {
+  color: $text-color-primary;
+}
+
+.site-about-mission {
+  padding-top: 50px;
+  background-color: $background-color-secondary;
+  padding-bottom: 50px;
+  
+}
+
+.missionImg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  //width: 90%;
+  //margin-right: 10px;
+ height: 572px;
+@include desktop {
+  width: 90%;
+//height: 350px;
+}
+@include mobile{
+  width: 100%;
+  height: 380px;
+  object-fit:none;
+}
+}
+
+.site-about-founder {
+  padding-top: 0px;
+  padding-bottom:0px;
+  background-color: $background-color-fifth;
+  color: $text-color-tertiary;
+
+  @include mobile{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+
+.founderDesc {
+color: #FFFFFF;
+//font-weight:lighter;
+font-style: normal;
+font-size: 16px;
+font-family: Roboto;
+margin-left: 20px;
+text-align: justify;
+@include mobile{
+  font-size: 12px;
+
+}
+}
+
+
+
+.founderImgClass img{
+  width: 80%;
+ 
+ @include tablet{
+   width: 70%;
+ }
+
+}
+
+.founderNameClass {
+   color: #FFFFFF;
+   
+}
+
+.teamImgClass img{
+  width: 140px;
+  height: 150px;
+  border-radius: 50%;
+filter: grayscale(80%);
+}
+
+
+.teamcontent p{
+font-family: Roboto;
+font-size: 12px;
+color: #625C5C;
+}
+
+.teamcontent span {
+color: #FAAD26;
+font-family: Montserrat;
+font-size: 10px;
+}
+/*.carousel{
+  margin-top: 50px;
+}
+.carousel-inner{
+  height: 50vh;
+  @include desktop{
+    height: 70vh;
+  }
+  @include tablet{
+    height: 100vh;
+  }
+}
+.carousel-caption{
+  color: #fff;
+  top: 50%;
+}*/
+
+.meet-team{
+  margin-right: 30px;
+}
+.meet-image{
+  background-size: 90%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
