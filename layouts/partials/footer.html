@@ -80,8 +80,7 @@
                                     $('#contact_form').trigger("reset");
                                     $('#loading_img').css('display','none');
                                     $('#submit_button').css('pointer-event','all');
-​
-                                } else if(data['success'] == false){
+​                                    } else if(data['success'] == false){
                                     $('#form_message').css('display','block');
                                     $('#form_message').css('color','red');
                                     $('#form_message').html(data['message']);
