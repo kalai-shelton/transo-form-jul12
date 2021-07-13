@@ -221,7 +221,11 @@
    $("#contact_form").submit(function(event){
                   console.log("contact form clicked")
                     event.preventDefault();
-                    $.ajax({url: "https://ezyloads.transo.in/api/website/demoRequest", success: function(result){
+                    $.ajax( 
+                      { type: 'POST',
+                        url: "https://ezyloads.transo.in/api/website/demoRequest",
+                    data:'{"name":"TestName","phoneNumber":"09838383832","email":"test@test.com","organization":"Test Org"}',
+                    success: function(result){
                       $('#form_message').html(data['message']);
                       console.log("result=",result)
                     }});
