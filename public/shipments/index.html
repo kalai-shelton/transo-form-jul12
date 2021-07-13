@@ -278,57 +278,46 @@
   </div>
 </footer>
 ​
-
+​
 
 <script src="../js/vendor.min.js"></script>
 
 <script src="../js/script.min.js"></script>
 <script>
-​
-​
-$(document).ready(function() { 
-  const QueryString = window.location.search; 
- const params = new URLSearchParams(QueryString);
-​
-  const utm_source = params.get('utm_source')
-  const utm_campaign = params.get('utm_campaign')
-  const click_ID = params.get('click_ID')
-         
-                $("#contact_form").submit(function(event){
+  $( document ).ready(function() {
+    console.log( "ready!" );
+     const QueryString = window.location.search; 
+     console.log("utm_source=",QueryString);
+     const params = new URLSearchParams(QueryString);
+     const utm_source = params.get('utm_source')
+   const utm_campaign = params.get('utm_campaign')
+   const click_ID = params.get('click_ID')
+   $("#contact_form").submit(function(event){
+                  console.log("contact form clicked")
                     event.preventDefault();
-                    if($('#contact_name').val() != '' && $('#contact_mobile').val() != '' && $('#contact_organization').val() != '' && $('#contact_email').val() != ''){
-​
-                        $('#loading_img').css('display','block');
-                        $('#submit_button').css('pointer-event','none');
-                        $.ajax({ 
-                            type: 'POST', 
-                            url: 'https://ezyloads.transo.in/api/website/demoRequest',
-                            data: '{ "name": "'+$('#contact_name').val()+'", "phoneNumber": "'+$('#contact_mobile').val()+'", "organization": "'+$('#contact_organization').val()+'","utm_campaign": "'+utm_campaign+'","utm_source": "'+utm_source+'","click_ID": "'+click_ID+'", "email": "'+$('#contact_email').val()+'" }', 
-                            contentType: "application/json",
-                            dataType: 'JSON',
-                            success: function (data) { 
-                                if(data['success'] == true){
-                                    $('#form_message').css('display','block');
-                                    $('#form_message').css('color','green');
-                                    $('#form_message').html(data['message']);
-                                   setTimeout(function(){ $('#form_message').css('display','none'); }, 10000);
-                                    $('#contact_form').trigger("reset");
-                                    $('#loading_img').css('display','none');
-                                    $('#submit_button').css('pointer-event','all');
-​
-                                } else if(data['success'] == false){
-                                    $('#form_message').css('display','block');
-                                    $('#form_message').css('color','red');
-                                    $('#form_message').html(data['message']);
-                                    setTimeout(function(){ $('#form_message').css('display','none'); }, 10000);
-                                    $('#loading_img').css('display','none');
-                                    $('#submit_button').css('pointer-event','all');
-                                }
-                            }
-                        });
-                    }
-                });
-            });
+                    $.ajax({url: "https://ezyloads.transo.in/api/website/demoRequest", success: function(result){
+                      $('#form_message').html(data['message']);
+                      console.log("result=",result)
+                    }});
+
+
+
+
+
+
+
+
+
+                          
+
+
+
+                                   
+
+
+
+                 });
+});
 </script></body>
 
 </html>

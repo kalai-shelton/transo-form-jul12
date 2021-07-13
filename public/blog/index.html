@@ -255,40 +255,20 @@
             <div class="col-md-4 contactpart2">
                 <div class="site-contact-form">
 
-                    
-                    <form method="POST" action="#" id="contact_form">
+                    <form method="POST" action="#" id="contact_form"> 
                         <div class="row">
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" name="name" id="contact_name"
-                                placeholder="Name *" maxlength="100" required>
-                            </div>
-                            <div class="col-md-12">
-                                <input type="email" class="form-control" name="email" id="contact_email" placeholder="Email *" required>
-                            </div>
-                            <div class="col-md-12">
-                                <input type="number" class="form-control" name="mabile" id="contact_mobile" placeholder="Phone number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  maxlength="10" min="0" required> </div>
-                            </div>
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" name="organization" id="organization"
-                                    placeholder="Organization *" required>
-                            </div>
+                            <div class="col-12"> <input type="text" class="form_input" name="name" id="contact_name" placeholder="Name" maxlength="100" required> </div>
+                            <div class="col-12"> <input type="email" class="form_input" name="email" id="contact_email" placeholder="Email" required> </div>
+                            <div class="col-12"> <input type="number" class="form_input contact_mobile" name="mabile" id="contact_mobile" placeholder="Phone number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  maxlength="10" min="0" required> </div>
+                            <div class="col-12"> <input type="text" class="form_input" name="organization" id="contact_organization" placeholder="Organization" maxlength="100" required> </div>
+                            <div class="col-12"> <button type="submit" class="form_button" id="submit_button" >Submit</button><img id="loading_img" src="../images/loading.gif" style="width: 90px; display: none;"></div>
+                            <div class="col-12" style="margin-top: 0px;"><p  style="text-align: left; display: none;" class="last_text" id="form_message"></p></div>  
                             <input type="hidden" id="utmSrc" name="utmSrc" value="">
                             <input type="hidden" id="utmCamp" name="utmCamp" value="">
-                            <input type="hidden" id="clickId" name="clickId" value="">
-                            <div class="col-md-12" style="padding-bottom:20px;"> 
-                                
-                                    <span class="">
-                                        By sending these details, I agree to the terms and conditions.
-                                    </span>
-                            </div>
-                            <div class="col-md-12">
-                                <button type="submit" class="btn-contact" id="submit_button" >Submit</button><img id="loading_img" src="../images/loading.gif" style="width: 90px; display: none;">
-                                <div class="col-12" style="margin-top: 0px;"><p  style="text-align: left; display: none;" class="btn-area" id="form_message"></p></div>                            
-                               
-                            </div>
-                            
+                             <input type="hidden" id="clickId" name="clickId" value="">                          
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -335,57 +315,46 @@
   </div>
 </footer>
 ​
-
+​
 
 <script src="../js/vendor.min.js"></script>
 
 <script src="../js/script.min.js"></script>
 <script>
-​
-​
-$(document).ready(function() { 
-  const QueryString = window.location.search; 
- const params = new URLSearchParams(QueryString);
-​
-  const utm_source = params.get('utm_source')
-  const utm_campaign = params.get('utm_campaign')
-  const click_ID = params.get('click_ID')
-         
-                $("#contact_form").submit(function(event){
+  $( document ).ready(function() {
+    console.log( "ready!" );
+     const QueryString = window.location.search; 
+     console.log("utm_source=",QueryString);
+     const params = new URLSearchParams(QueryString);
+     const utm_source = params.get('utm_source')
+   const utm_campaign = params.get('utm_campaign')
+   const click_ID = params.get('click_ID')
+   $("#contact_form").submit(function(event){
+                  console.log("contact form clicked")
                     event.preventDefault();
-                    if($('#contact_name').val() != '' && $('#contact_mobile').val() != '' && $('#contact_organization').val() != '' && $('#contact_email').val() != ''){
-​
-                        $('#loading_img').css('display','block');
-                        $('#submit_button').css('pointer-event','none');
-                        $.ajax({ 
-                            type: 'POST', 
-                            url: 'https://ezyloads.transo.in/api/website/demoRequest',
-                            data: '{ "name": "'+$('#contact_name').val()+'", "phoneNumber": "'+$('#contact_mobile').val()+'", "organization": "'+$('#contact_organization').val()+'","utm_campaign": "'+utm_campaign+'","utm_source": "'+utm_source+'","click_ID": "'+click_ID+'", "email": "'+$('#contact_email').val()+'" }', 
-                            contentType: "application/json",
-                            dataType: 'JSON',
-                            success: function (data) { 
-                                if(data['success'] == true){
-                                    $('#form_message').css('display','block');
-                                    $('#form_message').css('color','green');
-                                    $('#form_message').html(data['message']);
-                                   setTimeout(function(){ $('#form_message').css('display','none'); }, 10000);
-                                    $('#contact_form').trigger("reset");
-                                    $('#loading_img').css('display','none');
-                                    $('#submit_button').css('pointer-event','all');
-​
-                                } else if(data['success'] == false){
-                                    $('#form_message').css('display','block');
-                                    $('#form_message').css('color','red');
-                                    $('#form_message').html(data['message']);
-                                    setTimeout(function(){ $('#form_message').css('display','none'); }, 10000);
-                                    $('#loading_img').css('display','none');
-                                    $('#submit_button').css('pointer-event','all');
-                                }
-                            }
-                        });
-                    }
-                });
-            });
+                    $.ajax({url: "https://ezyloads.transo.in/api/website/demoRequest", success: function(result){
+                      $('#form_message').html(data['message']);
+                      console.log("result=",result)
+                    }});
+
+
+
+
+
+
+
+
+
+                          
+
+
+
+                                   
+
+
+
+                 });
+});
 </script></body>
 
 </html>
