@@ -240,41 +240,41 @@
 </div>
 
     </main><footer class="site-footer">
-  <div class="container" >
+  <div class="container">
     <div class="row">
-        <div class="col-md-4 site-footer-logo"><a href="../">
+      <div class="col-md-4 site-footer-logo"><a href="../">
           <img src="../images/transo-white-logo.svg" alt="logo-footer">
-       </div>
+      </div>
+​
+​
+​
       
       
-        
- 
-      
-      
-      <div class="footer-links " >
+​
+      <div class="footer-links ">
         <ul>
-        <li><a href="../oursolution" class="ourP" >Solution</a></li>
-        <li><a href="../features" class="aboutU"> Features</a></li>
-        <li><a href="../industry" class="contactU">Industry</a></li>
-      </ul>
-    </div>
-    <div class="footer-links1" >
-      <ul>
-     
-      <li><a href="../about" class="aboutU"> About </a></li>
-      <li><a href="../contact" class="contactU">Contact Us</a></li>
-      <li><a href="../privacypolicy" class="contactU">Privacy Policy</a></li>
-    </ul>
-  </div>
+          <li><a href="../oursolution" class="ourP">Solution</a></li>
+          <li><a href="../features" class="aboutU"> Features</a></li>
+          <li><a href="../industry" class="contactU">Industry</a></li>
+        </ul>
+      </div>
+      <div class="footer-links1">
+        <ul>
+          
+          <li><a href="../about" class="aboutU"> About </a></li>
+          <li><a href="../contact" class="contactU">Contact Us</a></li>
+          <li><a href="../privacypolicy" class="contactU">Privacy Policy</a></li>
+        </ul>
+      </div>
       <div class="footer-logos">
-       <a href="https://twitter.com/TRANSO_IN" class="fa fa-twitter"></a>
-      <a href="https://www.linkedin.com/company/ezyloads-logistics" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/TRANSO_IN" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/company/ezyloads-logistics" class="fa fa-linkedin"></a>
       </div>
     </div>
-      
-        
-      
-    </div>
+    
+​
+​
+  </div>
   </div>
 </footer>
 ​
@@ -284,44 +284,31 @@
 
 <script src="../js/script.min.js"></script>
 <script>
-  $( document ).ready(function() {
-    console.log( "ready!" );
-     const QueryString = window.location.search; 
-     console.log("utm_source=",QueryString);
-     const params = new URLSearchParams(QueryString);
-     const utm_source = params.get('utm_source')
-   const utm_campaign = params.get('utm_campaign')
-   const click_ID = params.get('click_ID')
-   $("#contact_form").submit(function(event){
-                  console.log("contact form clicked")
-                    event.preventDefault();
-                    $.ajax( 
-                      { type: 'POST',
-                        url: "https://ezyloads.transo.in/api/website/demoRequest",
-                    data:'{"name":"TestName","phoneNumber":"09838383832","email":"test@test.com","organization":"Test Org"}',
-                    success: function(result){
-                      $('#form_message').html(data['message']);
-                      console.log("result=",result)
-                    }});
-
-
-
-
-
-
-
-
-
-                          
-
-
-
-                                   
-
-
-
-                 });
-});
+  $(document).ready(function () {
+    console.log("ready!");
+    const QueryString = window.location.search;
+    console.log("utm_source=", QueryString);
+    const params = new URLSearchParams(QueryString);
+    const utm_source = params.get('utm_source')
+    const utm_campaign = params.get('utm_campaign')
+    const click_ID = params.get('click_ID')
+    $("#contact_form").submit(function (event) {
+      console.log("contact form clicked")
+      event.preventDefault();
+      $.ajax(
+        {
+          type: 'POST',
+          url: "https://ezyloads.transo.in/api/website/demoRequest",
+          
+          data: '{ "name": "'+$('#contact_name').val()+'", "phoneNumber": "'+$('#contact_mobile').val()+'", "organization": "'+$('#contact_organization').val()+'","utm_campaign": "'+utm_campaign+'","utm_source": "'+utm_source+'","click_ID": "'+click_ID+'", "email": "'+$('#contact_email').val()+'" }', 
+          success: function (result) {
+            $('#form_message').css('display','block');
+            $('#form_message').html(data['message']);
+            console.log("result=", result)
+          }
+        });
+    });
+  });
 </script></body>
 
 </html>
