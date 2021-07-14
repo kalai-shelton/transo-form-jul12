@@ -251,23 +251,32 @@
     const utm_source = params.get('utm_source')
     const utm_campaign = params.get('utm_campaign')
     const click_ID = params.get('click_ID')
-    $("#contact_form").submit(function (event) {
-      console.log("contact form clicked")
-      event.preventDefault();
-      $.ajax(
-        {
-          type: 'POST',
-          url: "https://ezyloads.transo.in/api/website/demoRequest",
-          
-          data: '{ "name": "'+$('#contact_name').val()+'", "phoneNumber": "'+$('#contact_mobile').val()+'", "organization": "'+$('#contact_organization').val()+'","utm_campaign": "'+utm_campaign+'","utm_source": "'+utm_source+'","click_ID": "'+click_ID+'", "email": "'+$('#contact_email').val()+'" }', 
-          success: function (result) {
-            $('#form_message').css('display','block');
-            $('#form_message').html(data['message']);
-            console.log("result=", result)
-          }
-        });
-    });
-  });
+    $("#contact_form").submit(function(event){
+                  console.log("contact form clicked")
+                    event.preventDefault();
+                        $.ajax({
+                            type: 'POST',
+                            url: 'https://ezyloads.transo.in/api/website/demoRequest',
+                            data: '{ "click_ID": "'+click_ID+'", "utm_source": "'+utm_source+'", "utm_campaign": "'+utm_campaign+'","name": "'+$('#contact_name').val()+'", "phoneNumber": "'+$('#contact_mobile').val()+'", "organization": "'+$('#contact_organization').val()+'","email": "'+$('#contact_email').val()+'" }',
+                            contentType: "application/json",
+                            dataType: 'JSON',
+                            success: function (data) {
+                                if(data['success'] == true){
+                                  console.log("success");
+                                     $('#form_message').css('display','block');
+                                     $('#form_message').css('color','green');
+                                     $('#form_message').html(data['message']);
+                                } else if(data['success'] == false){
+                                  console.log("error");
+                                    $('#form_message').css('display','block');
+                                     $('#form_message').css('color','red');
+                                     $('#form_message').html(data['message']);
+                                }
+                            }
+                        });
+                    
+                 });
+});
 </script></body>
 
 </html>
